@@ -23160,6 +23160,11 @@ deviceIs.addClasses(document.documentElement);
 			$('.header').removeClass('header--scrolled');
 		}
 	});
+	$(document).on('click', '.menu__link--dd', function() {
+		$(this).closest('.menu__item')
+			.toggleClass('active')
+			.find('.menu__sublist').slideToggle(300);
+	});
 	if (deviceIs.desktop) {} else {}
 	$(window).on('resize', function() {
 		winHeight = $(window).height();
@@ -23200,6 +23205,11 @@ function units() {
 	document.documentElement.style.setProperty('--winWidth', winWidth + 'px');
 	let inW = $('.inner').first().width();
 	document.documentElement.style.setProperty('--inW', inW + 'px');
+	if (window.matchMedia('(max-width:800px)').matches) {
+		$('body').addClass('body--mob');
+	} else {
+		$('body').removeClass('body--mob')
+	}
 }
 /*! vh fix */
 function vhFix() {
@@ -23223,6 +23233,17 @@ function introInit(block) {
 		navigation: {
 			nextEl: block.find('.intro-nav__item--next').get(0),
 			prevEl: block.find('.intro-nav__item--prev').get(0)
+		},
+		breakpoints: {
+			1: {
+				spaceBetween: 14,
+			},
+			601: {
+				spaceBetween: 24,
+			},
+			1201: {
+				spaceBetween: 32,
+			}
 		}
 	});
 	block.data('init', true);
@@ -23242,6 +23263,20 @@ function reviewsInit(block) {
 		navigation: {
 			nextEl: block.find('.slider-nav__item--next').get(0),
 			prevEl: block.find('.slider-nav__item--prev').get(0)
+		},
+		breakpoints: {
+			1: {
+				spaceBetween: 20,
+				slidesPerView: 1,
+			},
+			801: {
+				spaceBetween: 20,
+				slidesPerView: 2,
+			},
+			1201: {
+				spaceBetween: 30,
+				slidesPerView: 2,
+			}
 		}
 	});
 	block.data('init', true);
@@ -23317,6 +23352,24 @@ function projectInit(block) {
 		navigation: {
 			nextEl: block.find('.slider-nav__item--next').get(0),
 			prevEl: block.find('.slider-nav__item--prev').get(0)
+		},
+		breakpoints: {
+			1: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			501: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			801: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1201: {
+				slidesPerView: 3,
+				spaceBetween: 24,
+			}
 		}
 	});
 	block.data('init', true);
