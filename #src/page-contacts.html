@@ -1,0 +1,116 @@
+@@include('@@webRoot/template/_head.html',{
+	"pageTitle": 'Контакты',
+	"pageKeywords": '',
+	"pageDescription": ''
+})
+<body class="body grid-lines" data-header="dark">
+	<div class="app app--st">
+@@include('@@webRoot/template/_header.html')
+		<main class="app__content">
+			<div class="section crumbs">
+				<div class="inner">
+					<div class="ui-crumbs ui-crumbs--dark">
+						<div class="ui-crumbs__item">
+							<a class="ui-crumbs__link" href="index.html">
+								Главная
+							</a>
+						</div>
+						<div class="ui-crumbs__item">
+							Контакты
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="section section--pb-1 contacts">
+				<header class="head">
+					<h1 class="head__btitle">
+						Контакты
+					</h1>
+				</header>
+				<div class="inner">
+					<div class="contacts__inner">
+						<div class="contacts__row">
+							<div class="contacts__col contacts__col--l">
+								<div class="contacts-item ui-text">
+									<h2 class="contacts__subttl">
+										Офис
+									</h2>
+									<div class="contacts-item__text">
+										<p>
+											Адрес офиса: 192345, г.&nbsp;Москва, ул.&nbsp;Таганская, д.&nbsp;48/2, строение&nbsp;3, офис&nbsp;415
+										</p>
+									</div>
+								</div>
+								<div class="contacts-item ui-text">
+									<h2 class="contacts__subttl">
+										Контакты
+									</h2>
+									<div class="contacts-item__text">
+										<p>
+											<a href="tel:+7 9955939039">+7 995 593 90 39</a><br />
+											<a href="tel:+79955939039">+7 995 593 90 39</a><br />
+											почта: <a href="mailto:mailmail@gmail.com">mailmail@gmail.com</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="contacts__col contacts__col--r">
+								<h2 class="contacts__subttl ui-text">
+									Свяжитесь с&nbsp;нами
+								</h2>
+								<form class="contacts__form">
+									<div class="ui-form-field">
+										<label class="ui-input ui-input--white">
+											<input type="text" placeholder="Имя" />
+										</label>
+									</div>
+									<div class="ui-form-field">
+										<label class="ui-input ui-input--white">
+											<input type="tel" placeholder="Телефон" />
+										</label>
+									</div>
+									<div class="ui-form-field">
+										<label class="ui-input ui-input--white">
+											<textarea class="contacts__ta" type="email" placeholder="Комментарий к заявке"></textarea>
+										</label>
+									</div>
+									<div class="ui-form-field">
+										<div class="ui-form-files">
+											<div class="ui-form-files__add">
+												<div class="ui-form-files__btn">
+													Прикрепить файл
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ui-form-field">
+										<div class="ui-form-bot">
+											<div class="ui-form-bot__btn">
+												<button class="ui-btn ui-btn--h1 ui-btn--f1 ui-btn--orange" type="submit">
+													<span class="ui-btn__inner">
+														<span class="ui-btn__text">
+															Отправить
+														</span>
+														<span class="ui-btn__icon ui-btn__icon--arrow-rt ui-btn__icon--r">
+															<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-rt"></use></svg>
+														</span>
+													</span>
+												</button>
+											</div>
+											<div class="ui-form-bot__agree">
+												Нажимая «Отправить» вы даёте согласие на&nbsp;обработку персональных данных
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+@@include('@@webRoot/template/_footer.html')
+	</div>
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

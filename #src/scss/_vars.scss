@@ -1,0 +1,11 @@
+:root {
+	--contentWidth: 1260px;
+
+	--contentPads: 30px;
+	--contentPads2: calc(var(--contentPads) / 2);
+
+	--contentMars: calc(var(--contentPads) / -2);
+
+	--firstRight:470px;
+	--firstRightOff:50px;
+}

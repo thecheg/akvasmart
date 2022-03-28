@@ -1,0 +1,15 @@
+.body--fixed {
+	overflow:hidden!important;
+	padding-right:var(--sbW);
+}
+
+.body--menu-opened,
+.fancybox-active {
+	& .header {
+		padding-right:var(--sbW);
+	}
+}
+
+.fancybox-active {
+	padding-right:var(--sbW);
+}

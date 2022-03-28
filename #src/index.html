@@ -1,0 +1,141 @@
+@@include('@@webRoot/template/_head.html',{
+	"pageTitle": '',
+	"pageKeywords": '',
+	"pageDescription": ''
+})
+<body class="body grid-lines" data-header="white">
+	<div class="app">
+@@include('@@webRoot/template/_header.html')
+		<main class="app__content">
+			<section class="section first intro">
+				<div class="intro__bg">
+					<img src="@@webRoot/images/shape-white.svg" alt="" />
+				</div>
+				<div class="first__main first__main--intro">
+					<div class="inner">
+						<div class="intro__block">
+							<div class="intro__left">
+								<header class="head head--inner">
+									<h1 class="head__btitle" style="--bColor:#fff;">
+										Комлексные инженерные решения в&nbsp;доме
+									</h1>
+									<div class="head__subtitle head__subtitle--intro">
+										<p>
+											Индивидуальные решения, учитывающее задачи и&nbsp;технические условия объекта и&nbsp;требования Заказчика 
+										</p>
+									</div>
+								</header>
+							</div>
+							<div class="intro__right">
+								<div class="intro__right-top">
+									<div class="intro__right-ttl">
+										Услуги
+									</div>
+									<div class="intro__right-nav">
+										<div class="intro-nav">
+											<div class="intro-nav__item intro-nav__item--prev">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-intro-arr"></use></svg>
+											</div>
+											<div class="intro-nav__item intro-nav__item--next">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-intro-arr"></use></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="intro__right-inner">
+									<div class="intro__slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<a class="intro-item" href="page-service-water.html">
+													<div class="intro-item__img">
+														<picture>
+															<source srcset="@@webRoot/images/intro1.webp" type="image/webp">
+															<source srcset="@@webRoot/images/intro1.jpg" type="image/jpeg">
+															<img src="@@webRoot/images/intro1.jpg" alt="" />
+														</picture>
+													</div>
+													<div class="intro-item__ttl">
+														Водоснабжение
+													</div>
+													<div class="intro-item__text">
+														Комплекс элементов, предназначенных для&nbsp;получения, переноса и&nbsp;передачи тепла в&nbsp;обогреваемые помещения
+													</div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a class="intro-item" href="page-service-heating.html">
+													<div class="intro-item__img">
+														<picture>
+															<source srcset="@@webRoot/images/intro2.webp" type="image/webp">
+															<source srcset="@@webRoot/images/intro2.jpg" type="image/jpeg">
+															<img src="@@webRoot/images/intro2.jpg" alt="" />
+														</picture>
+													</div>
+													<div class="intro-item__ttl">
+														Отопление
+													</div>
+													<div class="intro-item__text">
+														Комплекс инженерных сооружений для&nbsp;забора, очистки и&nbsp;подачи воды потребителям
+													</div>
+												</a>
+											</div>
+											<div class="swiper-slide">
+												<a class="intro-item" href="page-service-auto.html">
+													<div class="intro-item__img">
+														<picture>
+															<source srcset="@@webRoot/images/intro3.webp" type="image/webp">
+															<source srcset="@@webRoot/images/intro3.jpg" type="image/jpeg">
+															<img src="@@webRoot/images/intro3.jpg" alt="" />
+														</picture>
+													</div>
+													<div class="intro-item__ttl">
+														Автополив
+													</div>
+													<div class="intro-item__text">
+														Комплекс инженерных сооружениедля насыщения почвы влагой по&nbsp;заранее запрограммированному графику
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="first__bot first__bot--intro">
+					<div class="inner">
+						<div class="first__socials">
+							<div class="contact">
+								<div class="contact__item">
+									<a class="contact-soc contact-soc--1" href="javascript:void(0);" target="_blank">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ig"></use></svg>
+									</a>
+								</div>
+								<div class="contact__item">
+									<a class="contact-soc contact-soc--1" href="javascript:void(0);" target="_blank">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wa"></use></svg>
+									</a>
+								</div>
+								<div class="contact__item contact__item--btn">
+									<button class="ui-btn ui-btn--h1 ui-btn--f1 ui-btn--orange" type="button">
+										<span class="ui-btn__inner">
+											<span class="ui-btn__text">
+												Связаться
+											</span>
+											<span class="ui-btn__icon ui-btn__icon--arrow-rt ui-btn__icon--r">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-rt"></use></svg>
+											</span>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>
