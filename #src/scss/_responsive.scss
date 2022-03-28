@@ -930,19 +930,22 @@
 	}
 
 	.projects {
+		&__head {
+		}
 		&-tabs {
+			overflow:hidden;
+			overflow-x:auto;
 			padding:0 20px;
-			flex-wrap:wrap;
 			&__btn {
 				font-size:12px;
 				line-height:20px;
 				padding:0;
 				border-width:2px;
+				white-space:nowrap;
 			}
 
 			&__item {
 				flex:0 0 auto;
-				margin-bottom:20px;
 				&:not(:last-child) {
 					margin-right:20px;
 				}
