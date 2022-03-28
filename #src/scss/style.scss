@@ -1187,9 +1187,6 @@ svg {
 	}
 	&__head {
 		padding-top:30px;
-	}
-	&-tabs {
-		display:flex;
 		position:relative;
 
 		&:before {
@@ -1201,6 +1198,10 @@ svg {
 			height:2px;
 			background:#DEDEDE;
 		}
+	}
+	&-tabs {
+		display:flex;
+		position:relative;
 
 		&__item {
 			display:flex;
